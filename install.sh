@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: leogcry22
+# Author: CryoByte33
 
 # Create a hidden directory for the script, if not present
 mkdir -p "$HOME/.cryo_utilities" &>/dev/null
@@ -58,14 +58,14 @@ rm -f cu.md5 &>/dev/null
 rm -f "$HOME/.cryo_utilities/launcher.sh" &>/dev/null
 
 # Install launcher script
-wget https://ghproxy.com/https://raw.githubusercontent.com/leogcry22/steam-deck-utilities/main/launcher.sh -O "$HOME/.cryo_utilities/launcher.sh"
+wget https://ghproxy.com/https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/launcher.sh -O "$HOME/.cryo_utilities/launcher.sh"
 chmod +x "$HOME/.cryo_utilities/launcher.sh"
 
 # Remove old icon
 rm -f "$HOME/.cryo_utilities/cryo-utilities.png" &>/dev/null
 
 # Install Icon
-wget https://ghproxy.com/https://raw.githubusercontent.com/leogcry22/steam-deck-utilities/main/cmd/cryoutilities/Icon.png -O "$HOME/.cryo_utilities/cryo-utilities.png"
+wget https://ghproxy.com/https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/cmd/cryoutilities/Icon.png -O "$HOME/.cryo_utilities/cryo-utilities.png"
 xdg-icon-resource install cryo-utilities.png --size 64
 
 # Create Desktop icons
@@ -73,7 +73,7 @@ rm -rf "$HOME"/Desktop/CryoUtilitiesUninstall.desktop 2>/dev/null
 echo '#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Uninstall CryoUtilities
-Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/leogcry22/steam-deck-utilities/main/uninstall.sh | bash -s --
+Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/uninstall.sh | bash -s --
 Icon=delete
 Terminal=false
 Type=Application
@@ -95,7 +95,7 @@ rm -rf "$HOME"/Desktop/UpdateCryoUtilities.desktop 2>/dev/null
 echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Update CryoUtilities
-Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/leogcry22/steam-deck-utilities/main/install.sh | bash -s --
+Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/install.sh | bash -s --
 Icon=bittorrent-sync
 Terminal=false
 Type=Application
@@ -107,7 +107,7 @@ rm -rf "$HOME"/.local/share/applications/CryoUtilitiesUninstall.desktop 2>/dev/n
 echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=CryoUtilities - Uninstall
-Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/leogcry22/steam-deck-utilities/main/uninstall.sh | bash -s --
+Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/uninstall.sh | bash -s --
 Icon=delete
 Terminal=false
 Type=Application
@@ -131,7 +131,7 @@ rm -rf "$HOME"/.local/share/applications/UpdateCryoUtilities.desktop 2>/dev/null
 echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=CryoUtilities - Update
-Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/leogcry22/steam-deck-utilities/main/install.sh | bash -s --
+Exec=curl https://ghproxy.com/https://raw.githubusercontent.com/CryoByte33/steam-deck-utilities/main/install.sh | bash -s --
 Icon=bittorrent-sync
 Terminal=false
 Type=Application
